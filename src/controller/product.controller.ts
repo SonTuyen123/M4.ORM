@@ -15,7 +15,7 @@ class ProductController {
      listProduct = async(req: Request, res: Response) => {
         let data = await this.ProductRepo.find()
         console.log(data);
-        res.render('../views/product/list',{staffs:data});
+        res.render('../views/product/index',{staffs:data});
     } 
 }
 export default new ProductController();

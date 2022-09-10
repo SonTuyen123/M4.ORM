@@ -7,7 +7,7 @@ class ProductController {
         this.listProduct = async (req, res) => {
             let data = await this.ProductRepo.find();
             console.log(data);
-            res.render('../views/product/list', { staffs: data });
+            res.render('../views/product/index', { staffs: data });
         };
         data_source_1.AppDataSource.initialize().then(async (connection) => {
             this.ProductRepo = connection.getRepository(Product_1.Product);
