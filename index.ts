@@ -15,7 +15,7 @@ AppDataSource.initialize().then(async connection => {
     app.set('view engine', 'ejs');
     app.set('views', './src/views');
     app.use(bodyParser.json());
-    app.use(express.static(path.join(__dirname, 'public')));
+    app.use(express.static('public'))
 
     app.use(express.json());
     const ProductRepo = connection.getRepository(Product);
@@ -25,7 +25,7 @@ AppDataSource.initialize().then(async connection => {
         console.log(`Server is running on http://localhost:3000`);
     })
 
-    app.use('',router)
+    app.use('/',router)
 
   
 

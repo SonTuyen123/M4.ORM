@@ -17,18 +17,18 @@
     <meta name="keywords" content="free dashboard template, free admin, free bootstrap template, bootstrap admin template, admin theme, admin dashboard, dashboard template, admin template, responsive" />
     <meta name="author" content="codedthemes">
     <!-- Favicon icon -->
-    <link rel="icon" href="../../../public/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <!-- Google font--><link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
     <!-- Required Fremwork -->
-    <link rel="stylesheet" type="text/css" href="../../../public/css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.min.css">
     <!-- themify-icons line icon -->
-    <link rel="stylesheet" type="text/css" href="../../../public/icon/themify-icons/themify-icons.css">
-    <link rel="stylesheet" type="text/css" href="../../../public/icon/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="icon/font-awesome/css/font-awesome.min.css">
     <!-- ico font -->
-    <link rel="stylesheet" type="text/css" href="../../../public/icon/icofont/css/icofont.css">
+    <link rel="stylesheet" type="text/css" href="icon/icofont/css/icofont.css">
     <!-- Style.css -->
-    <link rel="stylesheet" type="text/css" href="../../../public/css/style.css">
-    <link rel="stylesheet" type="text/css" href="../../../public/css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.css">
 </head>
 
 <body>
@@ -66,7 +66,7 @@
                         </div>
                     </div>
                     <a href="index.html">
-                        <img class="img-fluid" src="../../../public/images/logo.png" alt="Theme-Logo" />
+                        <img class="img-fluid" src="images/logo.png" alt="Theme-Logo" />
                     </a>
                     <a class="mobile-options">
                         <i class="ti-more"></i>
@@ -106,7 +106,7 @@
                                 </li>
                                 <li>
                                     <div class="media">
-                                        <img class="d-flex align-self-center img-radius" src="../../../public/images/avatar-2.jpg"
+                                        <img class="d-flex align-self-center img-radius" src="images/avatar-2.jpg"
                                             alt="Generic placeholder image">
                                         <div class="media-body">
                                             <h5 class="notification-user">John Doe</h5>
@@ -117,7 +117,7 @@
                                 </li>
                                 <li>
                                     <div class="media">
-                                        <img class="d-flex align-self-center img-radius" src="../../../public/images/avatar-4.jpg"
+                                        <img class="d-flex align-self-center img-radius" src="images/avatar-4.jpg"
                                             alt="Generic placeholder image">
                                         <div class="media-body">
                                             <h5 class="notification-user">Joseph William</h5>
@@ -128,7 +128,7 @@
                                 </li>
                                 <li>
                                     <div class="media">
-                                        <img class="d-flex align-self-center img-radius" src="../../../public/images/avatar-3.jpg"
+                                        <img class="d-flex align-self-center img-radius" src="images/avatar-3.jpg"
                                             alt="Generic placeholder image">
                                         <div class="media-body">
                                             <h5 class="notification-user">Sara Soudein</h5>
@@ -142,7 +142,7 @@
 
                         <li class="user-profile header-notification">
                             <a href="#!">
-                                <img src="../../../public/images/avatar-4.jpg" class="img-radius" alt="User-Profile-Image">
+                                <img src="images/avatar-4.jpg" class="img-radius" alt="User-Profile-Image">
                                 <span>John Doe</span>
                                 <i class="ti-angle-down"></i>
                             </a>
@@ -281,7 +281,7 @@
                                 </a>
                             </li>
                             <li class="active">
-                                <a href="bs-basic-table.html">
+                                <a href="/product">
                                     <span class="pcoded-micon"><i class="ti-layers"></i><b>FC</b></span>
                                     <span class="pcoded-mtext" data-i18n="nav.form-components.main">Basic Table</span>
                                     <span class="pcoded-mcaret"></span>
@@ -390,21 +390,7 @@
                         <div class="main-body">
                             <div class="page-wrapper">
                                 <!-- Page-header start -->
-                                <div class="page-header card">
-                                    <div class="card-block">
-                                        <h5 class="m-b-10">Bootstrap Basic Tables</h5>
-                                        <p class="text-muted m-b-10">lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                                        <ul class="breadcrumb-title b-t-default p-t-10">
-                                            <li class="breadcrumb-item">
-                                                <a href="index.html"> <i class="fa fa-home"></i> </a>
-                                            </li>
-                                            <li class="breadcrumb-item"><a href="#!">Basic Componenets</a>
-                                            </li>
-                                            <li class="breadcrumb-item"><a href="#!">Bootstrap Basic Tables</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+
                                 <!-- Page-header end -->
 
                                 <!-- Page-body start -->
@@ -412,8 +398,30 @@
                                     <!-- Basic table card start -->
                                     <div class="card">
                                         <div class="card-header">
-                                            <h5>Basic table</h5>
-                                            <span>use class <code>table</code> inside table element</span>
+                                            <div class="row">
+                                                <div class="col-12 col-md-4">
+                                                    <h5>Product Manager</h5>
+                                                    <span>use class <code>Product</code> inside table element</span>
+                                                    <div>
+                                                        <br>
+                                                        <a href="/create" class="btn btn-primary">Create</a>
+                                                    </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-8">
+                                                        <br><br>
+                                                        <form action="/product/search" method="get">
+                                                            <div class="row">
+                                                                <div class="col-12 col-md-8">
+                                                                    <input style="background: white" ; type="text" name="keyword" placeholder="Enter your name"
+                                                                        class="form-control">
+                                                                </div>
+                                                                <div class="col-12 col-md-4">
+                                                                    <button style="background-color: #3da7f3;border: #22cdef" type="submit" class="btn btn-primary">Search</button>
+                                                                </div>
+                                                                </div>
+                                                        </form>
+                                                        </div>
+                                                        </div>
                                             <div class="card-header-right">
                                                 <ul class="list-unstyled card-option">
                                                     <li><i class="fa fa-chevron-left"></i></li>
@@ -431,315 +439,74 @@
                                                     <thead>
                                                     <tr>
                                                         <th>#</th>
-                                                        <th>First Name</th>
-                                                        <th>Last Name</th>
-                                                        <th>Username</th>
+                                                        <th>Name</th>
+                                                        <th>age</th>
+                                                        <th>phone</th>
+                                                        <th>address</th>
                                                     </tr>
                                                     </thead>
                                                     <tbody>
-                                                    <tr>
-                                                        <th scope="row">1</th>
-                                                        <td>Mark</td>
-                                                        <td>Otto</td>
-                                                        <td>@mdo</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">2</th>
-                                                        <td>Jacob</td>
-                                                        <td>Thornton</td>
-                                                        <td>@fat</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">3</th>
-                                                        <td>Larry</td>
-                                                        <td>the Bird</td>
-                                                        <td>@twitter</td>
-                                                    </tr>
+                                                    <% Products.forEach((products, index)=> { %>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <%= index +1 %>
+                                                            </th>
+                                                            <td><a href="/product/details?id=<%= products.id%>">
+                                                                    <%= products.name %>
+                                                                </a></td>
+                                                            <td>
+                                                                <%= products.age %>
+                                                            </td>
+                                                            <td>
+                                                                <%= products.phone %>
+                                                            </td>
+                                                            <td>
+                                                                <%= products.address %>
+                                                            </td>
+                                                            <td><a href="/product/delete?id=<%= products.id %>" class="btn btn-danger">Delete</a></td>
+                                                            
+                                                            <td><a type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">EDIT</a></td>
+                                                            </tr>
+                                                    <% }) %>
                                                     </tbody>
                                                 </table>
                                             </div>
                                         </div>
+                                        
+                                    </div>
+                                    <div>
+                                        <form action="/product/edit">
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            ...
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                                        </div>
+                                                        </div>
+                                                        </div>
+                                                        </div>
+                                        </form>
                                     </div>
                                     <!-- Basic table card end -->
                                     <!-- Inverse table card start -->
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h5>Inverse table</h5>
-                                            <span>use class <code>table-inverse</code> inside table element</span>
-                                            <div class="card-header-right">
-                                                <ul class="list-unstyled card-option">
-                                                    <li><i class="fa fa-chevron-left"></i></li>
-                                                    <li><i class="fa fa-window-maximize full-card"></i></li>
-                                                    <li><i class="fa fa-minus minimize-card"></i></li>
-                                                    <li><i class="fa fa-refresh reload-card"></i></li>
-                                                    <li><i class="fa fa-times close-card"></i></li>
-                                                </ul>
-                                            </div>
-
-                                        </div>
-                                        <div class="card-block table-border-style">
-                                            <div class="table-responsive">
-                                                <table class="table table-inverse">
-                                                    <thead>
-                                                    <tr>
-                                                        <th>#</th>
-                                                        <th>First Name</th>
-                                                        <th>Last Name</th>
-                                                        <th>Username</th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                    <tr>
-                                                        <th scope="row">1</th>
-                                                        <td>Mark</td>
-                                                        <td>Otto</td>
-                                                        <td>@mdo</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">2</th>
-                                                        <td>Jacob</td>
-                                                        <td>Thornton</td>
-                                                        <td>@fat</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">3</th>
-                                                        <td>Larry</td>
-                                                        <td>the Bird</td>
-                                                        <td>@twitter</td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
                                     <!-- Inverse table card end -->
                                     <!-- Hover table card start -->
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h5>Hover table</h5>
-                                            <span>use class <code>table-hover</code> inside table element</span>
-                                            <div class="card-header-right">
-                                                <ul class="list-unstyled card-option">
-                                                    <li><i class="fa fa-chevron-left"></i></li>
-                                                    <li><i class="fa fa-window-maximize full-card"></i></li>
-                                                    <li><i class="fa fa-minus minimize-card"></i></li>
-                                                    <li><i class="fa fa-refresh reload-card"></i></li>
-                                                    <li><i class="fa fa-times close-card"></i></li>
-                                                </ul>
-                                            </div>
 
-                                        </div>
-                                        <div class="card-block table-border-style">
-                                            <div class="table-responsive">
-                                                <table class="table table-hover">
-                                                    <thead>
-                                                    <tr>
-                                                        <th>#</th>
-                                                        <th>First Name</th>
-                                                        <th>Last Name</th>
-                                                        <th>Username</th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                    <tr>
-                                                        <th scope="row">1</th>
-                                                        <td>Mark</td>
-                                                        <td>Otto</td>
-                                                        <td>@mdo</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">2</th>
-                                                        <td>Jacob</td>
-                                                        <td>Thornton</td>
-                                                        <td>@fat</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">3</th>
-                                                        <td>Larry</td>
-                                                        <td>the Bird</td>
-                                                        <td>@twitter</td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
                                     <!-- Hover table card end -->
                                     <!-- Contextual classes table starts -->
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h5>Contextual classes</h5>
-                                            <span>For Make row Contextual add Contextual class like <code>.table-success</code> in <code> tr tag</code> and For cell add Contextual class in <code> td or th tag</code> . </span>
-                                            <div class="card-header-right">
-                                                <ul class="list-unstyled card-option">
-                                                    <li><i class="fa fa-chevron-left"></i></li>
-                                                    <li><i class="fa fa-window-maximize full-card"></i></li>
-                                                    <li><i class="fa fa-minus minimize-card"></i></li>
-                                                    <li><i class="fa fa-refresh reload-card"></i></li>
-                                                    <li><i class="fa fa-times close-card"></i></li>
-                                                </ul>
-                                            </div>
 
-                                        </div>
-                                        <div class="card-block table-border-style">
-                                            <div class="table-responsive">
-                                                <table class="table">
-                                                    <thead>
-                                                    <tr>
-                                                        <th>#</th>
-                                                        <th>First Name</th>
-                                                        <th>Last Name</th>
-                                                        <th>Username</th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                    <tr class="table-active">
-                                                        <th scope="row">1</th>
-                                                        <td>Mark</td>
-                                                        <td>Otto</td>
-                                                        <td>@mdo</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">2</th>
-                                                        <td>Jacob</td>
-                                                        <td>Thornton</td>
-                                                        <td>@fat</td>
-                                                    </tr>
-                                                    <tr class="table-success">
-                                                        <th scope="row">3</th>
-                                                        <td>Larry</td>
-                                                        <td>the Bird</td>
-                                                        <td>@twitter</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">4</th>
-                                                        <td>Larry</td>
-                                                        <td>the Bird</td>
-                                                        <td>@twitter</td>
-                                                    </tr>
-                                                    <tr class="table-warning">
-                                                        <th scope="row">5</th>
-                                                        <td>Larry</td>
-                                                        <td>the Bird</td>
-                                                        <td>@twitter</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">6</th>
-                                                        <td>Larry</td>
-                                                        <td>the Bird</td>
-                                                        <td>@twitter</td>
-                                                    </tr>
-                                                    <tr class="table-danger">
-                                                        <th scope="row">7</th>
-                                                        <td>Larry</td>
-                                                        <td>the Bird</td>
-                                                        <td>@twitter</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">8</th>
-                                                        <td>Larry</td>
-                                                        <td>the Bird</td>
-                                                        <td>@twitter</td>
-                                                    </tr>
-                                                    <tr class="table-info">
-                                                        <th scope="row">9</th>
-                                                        <td>Larry</td>
-                                                        <td>the Bird</td>
-                                                        <td>@twitter</td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
                                     <!-- Contextual classes table ends -->
                                     <!-- Background Utilities table start -->
-                                    <div class="card">
-                                        <div class="card-header">
-                                            <h5>Background Utilities</h5>
-                                            <span>Regular table background variants are not available with the inverse table, however, you may use <code>text or background utilities</code> to achieve similar styles.</span>
-                                            <div class="card-header-right">
-                                                <ul class="list-unstyled card-option">
-                                                    <li><i class="fa fa-chevron-left"></i></li>
-                                                    <li><i class="fa fa-window-maximize full-card"></i></li>
-                                                    <li><i class="fa fa-minus minimize-card"></i></li>
-                                                    <li><i class="fa fa-refresh reload-card"></i></li>
-                                                    <li><i class="fa fa-times close-card"></i></li>
-                                                </ul>
-                                            </div>
 
-                                        </div>
-                                        <div class="card-block table-border-style">
-                                            <div class="table-responsive">
-                                                <table class="table table-inverse">
-                                                    <thead>
-                                                    <tr>
-                                                        <th>#</th>
-                                                        <th>First Name</th>
-                                                        <th>Last Name</th>
-                                                        <th>Username</th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                    <tr class="bg-primary">
-                                                        <th scope="row">1</th>
-                                                        <td>Mark</td>
-                                                        <td>Otto</td>
-                                                        <td>@mdo</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">2</th>
-                                                        <td>Jacob</td>
-                                                        <td>Thornton</td>
-                                                        <td>@fat</td>
-                                                    </tr>
-                                                    <tr class="bg-success">
-                                                        <th scope="row">3</th>
-                                                        <td>Larry</td>
-                                                        <td>the Bird</td>
-                                                        <td>@twitter</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">4</th>
-                                                        <td>Larry</td>
-                                                        <td>the Bird</td>
-                                                        <td>@twitter</td>
-                                                    </tr>
-                                                    <tr class="bg-warning">
-                                                        <th scope="row">5</th>
-                                                        <td>Larry</td>
-                                                        <td>the Bird</td>
-                                                        <td>@twitter</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">6</th>
-                                                        <td>Larry</td>
-                                                        <td>the Bird</td>
-                                                        <td>@twitter</td>
-                                                    </tr>
-                                                    <tr class="bg-danger">
-                                                        <th scope="row">7</th>
-                                                        <td>Larry</td>
-                                                        <td>the Bird</td>
-                                                        <td>@twitter</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">8</th>
-                                                        <td>Larry</td>
-                                                        <td>the Bird</td>
-                                                        <td>@twitter</td>
-                                                    </tr>
-                                                    <tr class="bg-info">
-                                                        <th scope="row">9</th>
-                                                        <td>Larry</td>
-                                                        <td>the Bird</td>
-                                                        <td>@twitter</td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
                                     <!-- Background Utilities table end -->
                                 </div>
                                 <!-- Page-body end -->
@@ -804,21 +571,21 @@
 <![endif]-->
 <!-- Warning Section Ends -->
 <!-- Required Jquery -->
-<script type="text/javascript" src="../../../public/js/jquery/jquery.min.js"></script>
-<script type="text/javascript" src="../../../public/js/jquery-ui/jquery-ui.min.js"></script>
-<script type="text/javascript" src="../../../public/js/popper.js/popper.min.js"></script>
-<script type="text/javascript" src="../../../public/js/bootstrap/js/bootstrap.min.js"></script>
-<!-- jquery slimscroll js -->
-<script type="text/javascript" src="../../../public/js/jquery-slimscroll/jquery.slimscroll.js"></script>
+<script type="text/javascript" src="js/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/popper.js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap/js/bootstrap.min.js"></script>
+<!-- jquery slimscroll js -->`
+<script type="text/javascript" src="js/jquery-slimscroll/jquery.slimscroll.js"></script>
 <!-- modernizr js -->
-<script type="text/javascript" src="../../../public/js/modernizr/modernizr.js"></script>
-<script type="text/javascript" src="../../../public/js/modernizr/css-scrollbars.js"></script>
+<script type="text/javascript" src="js/modernizr/modernizr.js"></script>
+<script type="text/javascript" src="js/modernizr/css-scrollbars.js"></script>
 
 <!-- Custom js -->
-<script type="text/javascript" src="../../../public/js/script.js"></script>
-<script src="../../../public/js/pcoded.min.js"></script>
-<script src="../../../public/js/vartical-demo.js"></script>
-<script src="../../../public/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script src="js/pcoded.min.js"></script>
+<script src="js/vartical-demo.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 </body>
 
 </html>
