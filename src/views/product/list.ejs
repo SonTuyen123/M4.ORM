@@ -409,7 +409,7 @@
                                                     </div>
                                                     <div class="col-12 col-md-8">
                                                         <br><br>
-                                                        <form action="/product/search" method="get">
+                                                        <form action="/search" method="get">
                                                             <div class="row">
                                                                 <div class="col-12 col-md-8">
                                                                     <input style="background: white" ; type="text" name="keyword" placeholder="Enter your name"
@@ -463,13 +463,58 @@
                                                             <td>
                                                                 <%= products.address %>
                                                             </td>
-                                                            <td><a href="/product/delete?id=<%= products.id %>" class="btn btn-danger">Delete</a></td>
+                                                            <td><a href="/product/delete?id=<%= products.id %>" class="btn btn-danger">DELETE</a></td>
                                                             
-                                                            <td><a type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">EDIT</a></td>
+                                                            <td><a class="btn btn-success" href="/edit?id=<%= products.id %>">EDIT</a></td>
                                                             </tr>
                                                     <% }) %>
                                                     </tbody>
                                                 </table>
+                                            </div>
+                                            <!-- Table edit -->
+                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalLabel" style="color: #0d6efd">Editing</h5>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form action="/edit" method="post">
+                                                                <div class="mb-3">
+                                                                    <label for="recipient-name" class="col-form-label">ID:</label>
+                                                                    <input type="text" class="form-control" id="recipient-id" name="id" readonly>
+                                                                </div>
+                                                                <div class="mb-3">
+                                                                    <label for="recipient-name" class="col-form-label"> Name:</label>
+                                                                    <input type="text" class="form-control" id="recipient-name" name="name" style="color: white">
+                                                                </div>
+                                                                <div class="mb-3">
+                                                                    <label for="recipient-age" class="col-form-label">Age:</label>
+                                                                    <input type="text" class="form-control" id="recipient-age" name="age" style="color: white">
+                                                                </div>
+                                                                <div class="mb-3">
+                                                                    <label for="recipient-phone" class="col-form-label">Phone:</label>
+                                                                    <input type="text" class="form-control" id="recipient-phone" name="phone" style="color: white">
+                                                                </div>
+                                                                <div class="mb-3">
+                                                                    <label for="recipient-address" class="col-form-label">Address:</label>
+                                                                    <input type="text" class="form-control" id="recipient-address" name="address"
+                                                                        style="color: white">
+                                                                </div>
+                                            
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                                                        style="background-color: white;color: black">Close
+                                                                    </button>
+                                                                    <button type="submit" class="btn btn-primary" style="background-color: #3574ff;border: #007bff">
+                                                                        Confirm
+                                                                    </button>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         
@@ -586,6 +631,17 @@
 <script src="js/pcoded.min.js"></script>
 <script src="js/vartical-demo.js"></script>
 <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script>
+    function getData(objProduct) {
+        console.log(objProduct)
+        document.getElementById('recipient-name').value = objProduct.name;
+        document.getElementById('recipient-age').value = objProduct.age;
+        document.getElementById('recipient-phone').value = objProduct.phone
+        document.getElementById('recipient-address').value = objProduct.address;
+        document.getElementById('recipient-id').value = objProduct.id;
+
+    }
+</script>
 </body>
 
 </html>

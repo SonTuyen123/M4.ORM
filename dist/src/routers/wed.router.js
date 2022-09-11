@@ -14,4 +14,7 @@ exports.router.get('/', product_controller_1.default.product);
 exports.router.get('/product/delete', product_controller_1.default.deleteProduct);
 exports.router.get('/create', product_controller_1.default.ShowFormCreateProduct);
 exports.router.post('/create', upload.none(), product_controller_1.default.createProduct);
+exports.router.get('/search', product_controller_1.default.findProduct);
+exports.router.get('/edit', product_controller_1.default.showHomeEditProduct);
+exports.router.post('/edit', upload.none(), product_controller_1.default.editProduct);
 //# sourceMappingURL=wed.router.js.map

@@ -13,3 +13,6 @@ router.get('/', productController.product);
 router.get('/product/delete', productController.deleteProduct);
 router.get('/create', productController.ShowFormCreateProduct);
 router.post('/create', upload.none(), productController.createProduct);
+router.get('/search', productController.findProduct);
+router.get('/edit', productController.showHomeEditProduct);
+router.post('/edit', upload.none(), productController.editProduct);
